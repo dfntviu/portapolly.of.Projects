@@ -151,11 +151,16 @@ ul { margin: 0; padding: 0; list-style: none; }
   background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
   box-shadow: var(--shadow); overflow: hidden; display: flex; flex-direction: column;
 }
-.card__media { aspect-ratio: 16 / 9; background: var(--surface-2); border-bottom: 1px solid var(--border); }
+.card__media--duo { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .9rem; padding: .9rem; background: var(--surface-2); aspect-ratio: auto; }
+.card__media--duo > a {display: block; min-width: 0; aspect-ratio: 16 / 9;            /* proporción de una captura: no recorta laterales */ overflow: hidden; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); box-shadow: var(--shadow); text-decoration: none; }
+.card__media--duo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top center;     /* si sobra imagen, se pierde el pie, nunca la cabecera */ }
+/* La tarjeta con dos capturas ocupa toda la fila: cada imagen pasa de ~250 px a ~480 px */
+.grid--2 > .card:has(.card__media--duo) { grid-column: 1 / -1; }
+/** .card__media { aspect-ratio: 16 / 9; background: var(--surface-2); border-bottom: 1px solid var(--border); }
 .card__media img { width: 100%; height: 100%; object-fit: cover; }
 .card__media--duo { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); aspect-ratio: auto; }
 .card__media--duo > a { background: var(--surface-2); aspect-ratio: 16 / 9; display: grid; overflow: hidden; text-decoration: none; }
-.card__media--duo img { width: 100%; height: 100%; object-fit: cover; }
+.card__media--duo img { width: 100%; height: 100%; object-fit: cover; }**/
 .card__body { padding: 1.25rem; display: flex; flex-direction: column; gap: .75rem; flex: 1; }
 .card__title { font-size: 1.15rem; font-weight: 700; }
 .card__meta { font-size: .85rem; color: var(--text-muted); }
