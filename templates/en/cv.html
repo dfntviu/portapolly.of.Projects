@@ -1,0 +1,26 @@
+<section id="cv" class="section">
+  <div class="container">
+    <header class="section__head">
+      <p class="section__eyebrow">Résumé</p>
+      <h2 class="section__title">My résumé</h2>
+      <p class="section__lead">Readable right here, no download needed. You can also open it or save the PDF.</p>
+    </header>
+
+    <article class="card">
+      <!-- The iframe is created by js/cv.js only when this section gets close to the viewport -->
+      <div data-cv-viewer data-title="Christopher's résumé">
+        <div class="cv-placeholder">
+          <p class="cv-status" data-cv-status
+             data-msg-missing="The résumé will be published soon."
+             data-msg-no-inline="Your browser cannot show PDFs inline. Use the button below to open it.">Loading résumé…</p>
+        </div>
+      </div>
+      <div class="card__body">
+        <div class="btn-row">
+          <a class="btn btn--primary btn--sm" data-cv-link href="#" target="_blank" rel="noopener">Open in new tab</a>
+          <a class="btn btn--ghost btn--sm" data-cv-link href="#" download>Download PDF</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>

@@ -1,0 +1,26 @@
+<section id="cv" class="section">
+  <div class="container">
+    <header class="section__head">
+      <p class="section__eyebrow">Currículum</p>
+      <h2 class="section__title">Mi CV</h2>
+      <p class="section__lead">Visible aquí mismo, sin descargar nada. También puedes abrirlo o guardarlo en PDF.</p>
+    </header>
+
+    <article class="card">
+      <!-- El iframe se crea con JS (js/cv.js) solo cuando esta sección se acerca a la pantalla -->
+      <div data-cv-viewer data-title="CV de DanielGP">
+        <div class="cv-placeholder">
+          <p class="cv-status" data-cv-status
+             data-msg-missing="El CV se publicará pronto."
+             data-msg-no-inline="Tu navegador no muestra PDF dentro de la página. Ábrelo con el botón de abajo.">Cargando CV…</p>
+        </div>
+      </div>
+      <div class="card__body">
+        <div class="btn-row">
+          <a class="btn btn--primary btn--sm" data-cv-link href="#" target="_blank" rel="noopener">Abrir en pestaña nueva</a>
+          <a class="btn btn--ghost btn--sm" data-cv-link href="#" download>Descargar PDF</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>

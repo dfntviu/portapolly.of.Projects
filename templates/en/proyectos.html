@@ -1,0 +1,87 @@
+<section id="proyectos" class="section">
+  <div class="container">
+    <header class="section__head">
+      <p class="section__eyebrow">Projects</p>
+      <h2 class="section__title">What I have built</h2>
+    </header>
+
+    <div class="stack">
+      <!-- FEATURED -->
+      <article class="card card--featured">
+        <!-- Screenshot: assets/img/agenda-equipos.webp (1280×720) -->
+        <div class="card__media media">
+          <span>Screenshot coming soon</span>
+          <img src="assets/img/agenda-equipos.webp" alt="Team Agenda: room booking calendar" width="1280" height="720" loading="lazy" decoding="async" onerror="this.remove()">
+        </div>
+        <div class="card__body">
+          <span class="badge">Featured project</span>
+          <h3 class="card__title">Team Agenda <span class="card__meta">(Agenda de Equipos)</span></h3>
+          <p class="card__impact">Conflict-free room and equipment bookings with access control for growing offices.</p>
+          <ul class="checklist">
+            <li>Server state with TanStack Query on top of Supabase</li>
+            <li>23 unit tests with Vitest</li>
+            <li>Accessibility: modals with Escape and ARIA, keyboard navigation</li>
+            <li>Responsive design, deployed on Vercel</li>
+          </ul>
+          <ul class="tags" aria-label="Technologies">
+            <li class="tag tag--accent">React</li><li class="tag tag--accent">TypeScript</li>
+            <li class="tag">Vite</li><li class="tag">Supabase</li><li class="tag">TanStack Query</li>
+            <li class="tag">Chart.js</li><li class="tag">Vitest</li>
+          </ul>
+          <div class="btn-row card__actions">
+            <a class="btn btn--primary btn--sm" href="https://agend-of-work-usefull-3jmi.vercel.app/login" target="_blank" rel="noopener">Live demo</a>
+            <a class="btn btn--ghost btn--sm" href="https://github.com/dfntviu/agendOfWork.Usefull" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="grid grid--2">
+        <article class="card">
+          <!-- Screenshots: assets/img/portal-educativo-1.webp and -2.webp (1280×720) -->
+          <div class="card__media card__media--duo">
+            <a class="media" href="assets/img/portal-educativo-1.webp" target="_blank" rel="noopener"><span>Screenshot 1</span>
+              <img src="assets/img/portal-educativo-1.webp" alt="Educational Web Portal: materials catalog" width="1280" height="720" loading="lazy" decoding="async" onerror="this.remove()"></a>
+            <a class="media" href="assets/img/portal-educativo-2.webp" target="_blank" rel="noopener"><span>Screenshot 2</span>
+              <img src="assets/img/portal-educativo-2.webp" alt="Educational Web Portal: role-based dashboard" width="1280" height="720" loading="lazy" decoding="async" onerror="this.remove()"></a>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Educational Web Portal</h3>
+            <p class="card__meta">Degree project · School of Engineering, UAEMéx</p>
+            <p class="card__impact">Students and teachers publish, browse and moderate learning material with roles and sessions.</p>
+            <p class="card__text">Vue 3 and TypeScript with the SSV (Service-Store-View) pattern: services wrap Firebase, Pinia stores are the single source of state, and views only render.</p>
+            <ul class="tags" aria-label="Technologies">
+              <li class="tag tag--accent">Vue 3</li><li class="tag tag--accent">TypeScript</li>
+              <li class="tag">Pinia</li><li class="tag">Firebase</li><li class="tag">Tailwind CSS</li><li class="tag">SSV</li>
+            </ul>
+            <div class="btn-row card__actions">
+              <!-- TODO: public URL once deployed -->
+              <a class="btn btn--primary btn--sm" href="http://localhost:8081/" target="_blank" rel="noopener" data-pending="Demo coming soon">Live demo</a>
+              <a class="btn btn--ghost btn--sm" href="https://github.com/dfntviu/PortalWEduc3.4" target="_blank" rel="noopener">Repository</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <!-- Screenshot: assets/img/gestor-calificaciones.webp (1280×720) -->
+          <div class="card__media media">
+            <span>Screenshot coming soon</span>
+            <img src="assets/img/gestor-calificaciones.webp" alt="Grade Manager: performance charts" width="1280" height="720" loading="lazy" decoding="async" onerror="this.remove()">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Grade Manager</h3>
+            <p class="card__impact">Student grade tracking with performance charts and per-group statistics.</p>
+            <p class="card__text">Full CRUD in JavaScript with averages and grade distributions charted with Chart.js.</p>
+            <ul class="tags" aria-label="Technologies">
+              <li class="tag tag--accent">JavaScript</li><li class="tag">Chart.js</li><li class="tag">HTML</li><li class="tag">CSS</li>
+            </ul>
+            <div class="btn-row card__actions">
+              <a class="btn btn--primary btn--sm" href="https://gestion-de-calificaciones-v2-0-omega.vercel.app/" target="_blank" rel="noopener">Live demo</a>
+              <!-- TODO: repository URL -->
+              <a class="btn btn--ghost btn--sm" href="#" target="_blank" rel="noopener" data-pending="Repository soon">Repository</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>

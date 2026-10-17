@@ -1,0 +1,87 @@
+<section id="proyectos" class="section">
+  <div class="container">
+    <header class="section__head">
+      <p class="section__eyebrow">Proyectos</p>
+      <h2 class="section__title">Lo que he construido</h2>
+    </header>
+
+    <div class="stack">
+      <!-- DESTACADO -->
+      <article class="card card--featured">
+        <!-- Captura: assets/img/agenda-equipos.webp (1280×720) -->
+        <div class="card__media media">
+          <span>Captura próximamente</span>
+          <img src="assets/img/agenda-equipos.webp" alt="Agenda de Equipos: calendario de reservas de salas" width="1280" height="720" loading="lazy" decoding="async" onerror="this.remove()">
+        </div>
+        <div class="card__body">
+          <span class="badge">Proyecto destacado</span>
+          <h3 class="card__title">Agenda de Equipos</h3>
+          <p class="card__impact">Reservas de salas y equipos sin choques de horario, con control de acceso, para oficinas que crecen.</p>
+          <ul class="checklist">
+            <li>Estado del servidor con TanStack Query sobre Supabase</li>
+            <li>23 pruebas unitarias con Vitest</li>
+            <li>Accesibilidad: modales con Escape y ARIA, navegación por teclado</li>
+            <li>Diseño responsivo y despliegue en Vercel</li>
+          </ul>
+          <ul class="tags" aria-label="Tecnologías">
+            <li class="tag tag--accent">React</li><li class="tag tag--accent">TypeScript</li>
+            <li class="tag">Vite</li><li class="tag">Supabase</li><li class="tag">TanStack Query</li>
+            <li class="tag">Chart.js</li><li class="tag">Vitest</li>
+          </ul>
+          <div class="btn-row card__actions">
+            <a class="btn btn--primary btn--sm" href="https://agend-of-work-usefull-3jmi.vercel.app/login" target="_blank" rel="noopener">Ver demo</a>
+            <a class="btn btn--ghost btn--sm" href="https://github.com/dfntviu/agendOfWork.Usefull" target="_blank" rel="noopener">Repositorio</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="grid grid--2">
+        <article class="card">
+          <!-- Capturas: assets/img/portal-educativo-1.webp y -2.webp (1280×720) -->
+          <div class="card__media card__media--duo">
+            <a class="media" href="assets/img/portal-educativo-1.webp" target="_blank" rel="noopener"><span>Captura 1</span>
+              <img src="assets/img/portal-educativo-1.webp" alt="Portal Web Educativo: catálogo de materiales" width="1280" height="720" loading="lazy" decoding="async" onerror="this.remove()"></a>
+            <a class="media" href="assets/img/portal-educativo-2.webp" target="_blank" rel="noopener"><span>Captura 2</span>
+              <img src="assets/img/portal-educativo-2.webp" alt="Portal Web Educativo: panel por rol" width="1280" height="720" loading="lazy" decoding="async" onerror="this.remove()"></a>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Portal Web Educativo</h3>
+            <p class="card__meta">Proyecto de titulación · FI-UAEMéx</p>
+            <p class="card__impact">Alumnos y profesores publican, consultan y moderan material educativo con roles y sesiones.</p>
+            <p class="card__text">Vue 3 y TypeScript con el patrón SSV (Service-Store-View): los servicios encapsulan Firebase, los stores de Pinia son la única fuente de estado y las vistas solo presentan.</p>
+            <ul class="tags" aria-label="Tecnologías">
+              <li class="tag tag--accent">Vue 3</li><li class="tag tag--accent">TypeScript</li>
+              <li class="tag">Pinia</li><li class="tag">Firebase</li><li class="tag">Tailwind CSS</li><li class="tag">SSV</li>
+            </ul>
+            <div class="btn-row card__actions">
+              <!-- TODO: URL pública cuando lo despliegues -->
+              <a class="btn btn--primary btn--sm" href="http://localhost:8081/" target="_blank" rel="noopener" data-pending="Demo en preparación">Ver demo</a>
+              <a class="btn btn--ghost btn--sm" href="https://github.com/dfntviu/PortalWebEducativo3.3_Vue.MVCMV.TS-JS/tree/final_Vite%2BTS%2BArqMVCMV_02" target="_blank" rel="noopener">Repositorio</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <!-- Captura: assets/img/gestor-calificaciones.webp (1280×720) -->
+          <div class="card__media media">
+            <span>Captura próximamente</span>
+            <img src="assets/img/gestor-calificaciones.webp" alt="Gestor de Calificaciones: gráficas de desempeño" width="1280" height="720" loading="lazy" decoding="async" onerror="this.remove()">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Gestor de Calificaciones</h3>
+            <p class="card__impact">Registro de calificaciones con gráficas de desempeño y estadísticas por grupo.</p>
+            <p class="card__text">CRUD completo en JavaScript con promedios y distribución de calificaciones visualizados con Chart.js.</p>
+            <ul class="tags" aria-label="Tecnologías">
+              <li class="tag tag--accent">JavaScript</li><li class="tag">Chart.js</li><li class="tag">HTML</li><li class="tag">CSS</li>
+            </ul>
+            <div class="btn-row card__actions">
+              <a class="btn btn--primary btn--sm" href="https://gestion-de-calificaciones-v2-0-omega.vercel.app/" target="_blank" rel="noopener">Ver demo</a>
+              <!-- TODO: URL del repositorio -->
+              <a class="btn btn--ghost btn--sm" href="#" target="_blank" rel="noopener" data-pending="Repositorio pronto">Repositorio</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
