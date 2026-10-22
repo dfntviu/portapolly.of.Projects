@@ -16,7 +16,7 @@ export function marcarEnlacesPendientes(raiz = document) {
 
     a.removeAttribute('href');
     a.removeAttribute('target');
-    a.setAttribute('aria-disabled', 'true');
+    a.setAttribute('aria-disabled', 'true'); // desactivamos la etiqueta
     const destino = a.querySelector('[data-pending-target]') ?? a;
     if (a.dataset.pending) destino.textContent = a.dataset.pending;
   });
